@@ -25,7 +25,7 @@ constructor(){
 }
 async componentDidMount(){
   console.log(`${this.props.country}`)
-    let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.catagary}&apiKey=23fc9d3950494543befe7fc3b624bf29&page=1&pageSize=${this.props.pageSize}`;
+    let url=`Give the NEWS APP API HERE `;
     this.setState({Loding : true});
     let data=await fetch(url);
     let pdata= await data.json();
@@ -33,7 +33,7 @@ async componentDidMount(){
 }
 prevclicked= async ()=>{
   console.log("pclicked");
-          let url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.catagary}&apiKey=23fc9d3950494543befe7fc3b624bf29&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
+          let url=`Give the NEWS APP API HERE`;
           this.setState({Loding : true});
           let data=await fetch(url);
           let pdata= await data.json();
@@ -47,7 +47,7 @@ nextcc= async ()=>{
   console.log("nextclicked");
 
   
-  let url=`https://newsapi.org/v2/top-headlines?country=in&category=${this.props.catagary}&apiKey=23fc9d3950494543befe7fc3b624bf29&page=${this.state.page+1}&pageSize=${this.props.pageSize}`;
+  let url=`Give the NEWS APP API HERE`;
   this.setState({Loding : true});
   let data=await fetch(url);
   let pdata= await data.json();
